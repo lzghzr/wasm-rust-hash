@@ -75,7 +75,7 @@ fn get_digest(algorithm: &str, data: &str) -> String {
     } else if WHIRLPOOL.contains(&algorithm) {
         digest::<Whirlpool>(data)
     } else {
-        encode(data)
+        String::from("")
     }
 }
 

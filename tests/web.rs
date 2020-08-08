@@ -27,4 +27,5 @@ fn pass() {
     assert_eq!(hash("SHA3-384", ""), "0c63a75b845e4f7d01107d852e4c2485c51a50aaaa94fc61995e71bbee983a2ac3713831264adb47fb6bd1e058d5f004");
     assert_eq!(hash("SHA3-512", ""), "a69f73cca23a9ac5c8b567dc185a756e97c982164fe25859e0d1dcc1475c80a615b2123af1f5f94c11e3e9402c3ac558f500199d95b6d3e301758586281dcd26");
     assert_eq!(hash("whirlpool", ""), "19fa61d75522a4669b44e39c1d2e1726c530232130d407f89afee0964997f7a73e83be698b288febcf88e3e03c4f0757ea8964e59b63d93708b138cc42a66eb3");
+    assert_eq!(hash("", ""), "");
 }
